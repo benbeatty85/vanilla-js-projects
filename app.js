@@ -44,7 +44,7 @@ cityForm.addEventListener('submit', function(event) { // this line changes
   getCoordinatesForCity(city)
   .then(getCurrentWeather)
   .then(function(weather) {
-    cityWeather.innerText = "The current temperature is " + weather.temperature + "." + "\n" + " The windspeed is " + weather.windSpeed + " and the visibility is " + weather.visibility + "." + "\n" + "Do you dare go outside and risk death!";
+    cityWeather.innerText = "The current temperature is " + weather.temperature + "." + "\n" + " The windspeed is " + weather.windSpeed + " and the visibility is " + weather.visibility + "." + "\n" + "Go outside at your own risk Muah-ha ha ha!";
   });
 });
 
