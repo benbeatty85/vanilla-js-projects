@@ -44,9 +44,11 @@ cityForm.addEventListener('submit', function(event) { // this line changes
   getCoordinatesForCity(city)
   .then(getCurrentWeather)
   .then(function(weather) {
-    cityWeather.innerText = 'Current temperature: ' + weather.temperature;
+    cityWeather.innerText = "The current temperature is " + weather.temperature + "." + "\n" + " The windspeed is " + weather.windSpeed + " and the visibility is " + weather.visibility + "." + "\n" + "Do you dare go outside and risk death!";
   });
 });
+
+//random colour button
 
 var button = document.getElementById('btn');
 
@@ -57,6 +59,8 @@ button.onclick = function () {
     
     this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
 };
+
+//page loader
 
 var overlay = document.getElementById("overlay");
 

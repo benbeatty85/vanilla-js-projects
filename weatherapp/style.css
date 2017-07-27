@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background: url('person.jpeg') no-repeat center;
+    background: url('img/person.jpeg') no-repeat center;
     background-size: cover;
     max-width: 100%;
 }
@@ -45,7 +45,7 @@ button {
     width: 200px;
     cursor: pointer;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Amatic SC', sans-serif;
     
 }
@@ -54,7 +54,13 @@ input[type=text] {
     border-radius: 10px;
     border: none;
     padding: 18px;
-    width: 200px;
+    width: 400px;
+    background-color: #fff;
+}
+
+.city-input {
+    font-size: 30px;
+    color: #000;
 }
 
 form {
@@ -86,6 +92,17 @@ form {
     @keyframes round {
         from{transform: rotate(0deg)}
         to {transform: rotate(360deg)}
+    }
+    
+    .city-weather {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        color: #fff;
+        font-family: 'Amatic SC', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        
     }
 
 
