@@ -62,20 +62,25 @@ form {
     justify-content: center;
 }
 
-#loading {
+#overlay {
+    height: 100%;
+    width:100%;
+    background: rgba(0,0,0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.spinner {
     width: 50px;
     height: 50px;
     border: 5px solid #fff;
     border-top-color: red;
     border-radius: 100%;
-    margin-top: 100px;
+    margin-top: 500px;
     animation: round 1s linear infinite;
-    z-index: 999;
-    display: block;
-}
-
-.hide {
-    display: none:
 }
     
     @keyframes round {
